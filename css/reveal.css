@@ -1476,4 +1476,6 @@ sup.sup-height {
   list-style-type: none; }
 
 .large-img.large-img {
-  width: 350px; }
+  min-width: 300px;
+  width: 100%;
+  max-width: 500px; }
