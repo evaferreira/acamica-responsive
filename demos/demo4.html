@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Demo Responsive</title>
+	<meta name="author" content="Here goes your name, you beautiful code-maker">
+
+	<link href="demo.css" rel="stylesheet">
+	<style>
+		.izq{
+			background-color: purple;
+			padding: 30px 20px;
+			box-sizing: border-box;
+		}
+		.der{
+			background-color: blue;
+			padding: 30px 20px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+
+	
+	<section class="live demo slide example">
+	<pre>
+			<style contenteditable class="edit-me">
+		.izq{
+			float: left;
+			width: 70%;
+		}
+		.der{
+			width: 30%;
+			float: right;
+		}
+		@media (max-width: 767px){
+			.izq, .der{
+				width: 100%;
+				float: none;
+			}
+		}
+			</style>
+	</pre>
+	<div class="flota col">
+		<div class="izq">Izquierda</div>
+		<div class="der">Derecha</div>
+	</div>
+	</section>
+
+
+	
+</body>
+</html>

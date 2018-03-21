@@ -69,14 +69,134 @@
 					<p class="fragment">¡Media queries al rescate!</p>
 				</section>
 				
+				<section>
+					<h2>Breakpoints</h2>
+					<pre><code data-trim>
+		@media (max-width: 767px){
+			.el{
+				background-color: rebeccapurple;
+			}
+		}
+					</code></pre>
+				</section>
 				
+				<section>
+					<h2>Breakpoints</h2>
+					<pre><code data-trim>
+		@media (max-width: 767px) and (orientation: landscape){
+			.el{
+				background-color: forestgreen;
+			}
+		}
+					</code></pre>
+					<a href="demos/demo1.html" target="_blank">Demo</a>
+				</section>
 				
+				<section class="left">
+					<h2>Approaches</h2>
+					<ul>
+						<li>Desktop First</li>
+						<li>Mobile First</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Desktop First</h2>
+					<pre><code data-trim>
+		.el{
+			background-color: hotpink;
+		}
+		@media (max-width: 1280px){
+			.el{
+				background-color: tomato;
+			}
+		}
+		@media (max-width: 767px){
+			.el{
+				background-color: forestgreen;
+			}
+		}
+					</code></pre>
+					<a href="demos/demo2.html" target="_blank">Demo</a>
+				</section>
+			
+				<section>
+					<h2>Mobile First</h2>
+					<pre><code data-trim>
+		.el{
+			background-color: hotpink;
+		}
+		@media (min-width: 768px){
+			.el{
+				background-color: forestgreen;
+			}
+		}
+		@media (min-width: 1280px){
+			.el{
+				background-color: tomato;
+			}
+		}
+					</code></pre>
+					<a href="demos/demo3.html" target="_blank">Demo</a>
+				</section>
+			
+				<section>
+					<h2>Cuidado con los 767/768</h2>
+				</section>
+
+				<section class="left">
+					<h2>¿Por qué uno o el otro?</h2>
+					<ul>
+						<li class="fragment">Ambos son válidos</li>
+						<li class="fragment">A veces es decisión de diseño</li>
+						<li class="fragment">A veces por analytics</li>
+					</ul>
+				</section>
+			
+				<section>
+					<h2>Sean constantes</h2>
+				</section>
+			
+				<section>
+					<h2>Cambien solo lo necesario</h2>
+				</section>
+			
+				<section>
+					<h2>Columnas</h2>
+					<pre><code data-trim>
+		.izq{
+			float: left;
+			width: 70%;
+			...
+		}
+		.der{
+			width: 30%;
+			float: right;
+			...
+		}
+		@media (max-width: 767px){
+			.izq, .der{
+				width: 100%;
+				float: none;
+			}
+		}
+					</code></pre>
+					<a href="demos/demo4.html" target="_blank">Demo</a>
+				</section>
+
+				<section class="left">
+					<h2>Unidades</h2>
+					<ul>
+						<li>Absolutas</li>
+						<li>Relativas</li>
+					</ul>
+				</section>
 				
 				
 				
 
-				<section class="iframe">
-					<iframe sandbox="allow-scripts" src="demos/demo1.html"></iframe>
+				<section class="iframe incomplete">
+					http://motherfuckingwebsite.com/
 				</section>
 
 				<section class="left">
