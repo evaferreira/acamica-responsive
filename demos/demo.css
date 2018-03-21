@@ -83,3 +83,14 @@ textarea{
 	background-color: chocolate;
 	box-shadow: inset 0 0 2px 2px white;
 }
+
+
+
+.edit-me{
+	display: block;
+	border: 1px dashed #444;
+	width: 90%;
+	max-width: 1200px;
+	margin: 5vh auto;
+	color: #000;
+}
