@@ -8,15 +8,12 @@
 
 	<link href="demo.css" rel="stylesheet">
 	<style>
-.izq{
-	background-color: purple;
-	padding: 30px 20px;
-	box-sizing: border-box;
+.padre{
+	background-color: hotpink;
+	margin: auto;
 }
-.der{
-	background-color: blue;
-	padding: 30px 20px;
-	box-sizing: border-box;
+.hijo{
+	background-color: pink;
 }
 	</style>
 </head>
@@ -26,25 +23,21 @@
 	<section class="live demo slide example">
 	<pre>
 			<style contenteditable class="edit-me">
-		.izq{
-			float: left;
-			width: 70%;
+		.padre{
+			width: 90%;
+			max-width: 1000px;
 		}
-		.der{
-			width: 30%;
-			float: right;
-		}
-		@media (max-width: 767px){
-			.izq, .der{
-				width: 100%;
-				float: none;
-			}
+		.hijo{
+			width: 50%;
 		}
 			</style>
 	</pre>
 	<div class="flota col">
-		<div class="izq">Izquierda</div>
-		<div class="der">Derecha</div>
+		<div class="padre">Padre
+			<div class="hijo">
+				Hijo
+			</div>
+		</div>
 	</div>
 	</section>
 

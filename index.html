@@ -192,6 +192,151 @@
 					</ul>
 				</section>
 				
+				<section class="left">
+					<h2>Relativas</h2>
+					<ul>
+						<li>Porcentajes</li>
+						<li>Viewport Units</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Porcentajes</h2>
+					<pre><code data-trim>
+		.padre{
+			width: 90%;
+			max-width: 1000px;
+		}
+		.hijo{
+			width: 50%;
+		}
+					</code></pre>
+					<a href="demos/demo5.html" target="_blank">Demo</a>
+				</section>
+
+				<section>
+					<h2>Los % se reinician<br>
+					Toman de referencia a su padre</h2>
+				</section>
+
+				<section>
+					<h2>Viewport Units</h2>
+					<pre><code data-trim>
+		.padre{
+			width: 90%;
+			max-width: 1000px;
+		}
+		.hijo{
+			width: 50vw;
+		}
+					</code></pre>
+					<a href="demos/demo6.html" target="_blank">Demo</a>
+				</section>
+
+				<section>
+					<h2>Las Viewport Units NO se reinician<br>
+					Toman de referencia al viewport</h2>
+				</section>
+
+				<section>
+					<h2>Altos con Viewport Height</h2>
+				</section>
+
+				<section>
+					<h2>Altos con Viewport Height</h2>
+					<pre><code data-trim>
+		.el{
+			height: 100%;
+		}
+					</code></pre>
+					<a href="demos/demo7.html" target="_blank">Demo</a>
+				</section>
+
+				<section>
+					<h2>Combinable con min/max :)</h2>
+				</section>
+
+				<section aria-hidden="true">
+					<h2>---</h2>
+				</section>
+
+				<section>
+					<h2>Flexbox</h2>
+				</section>
+
+				<section class="left">
+					<h2>Flexbox</h2>
+					<ul>
+						<li class="fragment">Flexible Box Layout</li>
+						<li class="fragment">Distribuir</li>
+						<li class="fragment">Alinear</li>
+						<li class="fragment">... Cuando su contenido es flexible</li>
+						<li class="fragment">Small scale / Components</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Flexbox</h2>
+					<p>Trabaja sobre el elemento padre</p>
+				</section>
+
+				<section>
+					<h2>Flexbox</h2>
+					<pre><code data-trim>
+		.padre{
+			display: flex;
+		}
+					</code></pre>
+					<a href="demos/flexbox1.html" target="_blank">Demo</a>
+				</section>
+
+				<section>
+					<h2>Flexbox, horizontal</h2>
+					<pre><code data-trim>
+		.padre{
+			display: flex;
+		}
+		.hijo{
+			flex-grow: 1;
+		}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Flexbox responsive</h2>
+				</section>
+
+				<section>
+					<h2>Flexbox responsive</h2>
+					<pre><code data-trim>
+		.padre{
+			display: flex;
+		}
+		.hijo{
+			flex-grow: 1;
+		}
+					</code></pre>
+					<a href="demos/flexbox2.html" target="_blank">Demo</a>
+				</section>
+
+				<section>
+					<h2>¡Mirá, mamá!<br>¡Sin Media Queries!</h2>
+				</section>
+
+				<section class="left">
+					<h2>Más sobre Flexbox</h2>
+					<ul>
+						<li><a href="http://flexboxfroggy.com/#es">Flexbox Froggy</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Machete de CSS-Tricks</a></li>
+						<li><a href="https://philipwalton.github.io/solved-by-flexbox/">Solved by flexbox</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>¿Y esto dónde funciona?</h2>
+					<a class="fragment" href="https://caniuse.com/#feat=flexbox" target="_blank"><img src="img/flexbox.png" alt="Flexbox tabla de compatibilidad"></a>
+				</section>
+
 				
 				
 

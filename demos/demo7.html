@@ -8,16 +8,12 @@
 
 	<link href="demo.css" rel="stylesheet">
 	<style>
-.izq{
-	background-color: purple;
-	padding: 30px 20px;
-	box-sizing: border-box;
-}
-.der{
-	background-color: blue;
-	padding: 30px 20px;
-	box-sizing: border-box;
-}
+		.el{
+			background-color: hotpink;
+			width: 100%;
+			margin: auto;
+			max-width: 1000px;
+		}
 	</style>
 </head>
 <body>
@@ -26,25 +22,13 @@
 	<section class="live demo slide example">
 	<pre>
 			<style contenteditable class="edit-me">
-		.izq{
-			float: left;
-			width: 70%;
-		}
-		.der{
-			width: 30%;
-			float: right;
-		}
-		@media (max-width: 767px){
-			.izq, .der{
-				width: 100%;
-				float: none;
-			}
-		}
+.el{
+	height: 100%;
+}
 			</style>
 	</pre>
 	<div class="flota col">
-		<div class="izq">Izquierda</div>
-		<div class="der">Derecha</div>
+		<div class="el">100% no funciona :'(</div>
 	</div>
 	</section>
 
