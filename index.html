@@ -311,9 +311,11 @@
 					<pre><code data-trim>
 		.padre{
 			display: flex;
+			flex-wrap: wrap;
 		}
 		.hijo{
 			flex-grow: 1;
+			flex-basis: 250px;
 		}
 					</code></pre>
 					<a href="demos/flexbox2.html" target="_blank">Demo</a>
@@ -323,13 +325,66 @@
 					<h2>¡Mirá, mamá!<br>¡Sin Media Queries!</h2>
 				</section>
 
-				<section class="left">
-					<h2>Más sobre Flexbox</h2>
-					<ul>
-						<li><a href="http://flexboxfroggy.com/#es">Flexbox Froggy</a></li>
-						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Machete de CSS-Tricks</a></li>
-						<li><a href="https://philipwalton.github.io/solved-by-flexbox/">Solved by flexbox</a></li>
-					</ul>
+				<section>
+					<h2>Cambiar orden de elementos</h2>
+					<div class="fragment">
+						<pre><code data-trim>
+		.padre{
+			display: flex;
+		}
+		.hijo-uno{
+			order: 3;
+		}
+		.hijo-dos{
+			order: 1;
+		}
+						</code></pre>
+						<a href="demos/flexbox3.html" target="_blank">Demo</a>
+					</div>
+				</section>
+
+				<section>
+					<h2>Flexbox Vertical</h2>
+				</section>
+
+				<section>
+					<h2>Cambiar orden de elementos</h2>
+					<div class="fragment">
+						<pre><code data-trim>
+		.padre{
+			display: flex;
+			flex-direction: column;
+		}
+						</code></pre>
+						<a href="demos/flexbox4.html" target="_blank">Demo</a>
+					</div>
+				</section>
+
+				<section>
+					<h2>Alinear y Distribuir</h2>
+				</section>
+
+				<section>
+					<h2>Cambiar orden de elementos</h2>
+					<div class="fragment">
+						<pre><code data-trim>
+		.padre{
+			display: flex;
+			justify-content: ...;
+			align-items: ...;
+		}
+						</code></pre>
+						<a href="demos/flexbox5.html" target="_blank">Demo</a>
+					</div>
+				</section>
+
+				<section>
+					<h2>Cada elemento hijo puede ser un nuevo padre flex</h2>
+				</section>
+
+				<section>
+					<h2>¡Las posibilidades son infinitas!</h2>
+					<img src="img/infinitas.gif" alt="Episodio de los Simpsons: Un ocho se transforma en un signo de infinito mientras le habla a Lisa Simpson">
 				</section>
 
 				<section>
@@ -337,16 +392,38 @@
 					<a class="fragment" href="https://caniuse.com/#feat=flexbox" target="_blank"><img src="img/flexbox.png" alt="Flexbox tabla de compatibilidad"></a>
 				</section>
 
-				
-				
+				<section class="left">
+					<h2>Más sobre Flexbox</h2>
+					<ul>
+						<li><a href="http://flexboxfroggy.com/#es">Flexbox Froggy(ES)</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Machete de CSS-Tricks</a></li>
+						<li><a href="https://philipwalton.github.io/solved-by-flexbox/">Solved by flexbox</a></li>
+					</ul>
+				</section>
 
-				<section class="iframe incomplete">
-					http://motherfuckingwebsite.com/
+				<section class="left">
+					<h2>Grids</h2>
+					<ul>
+						<li><a href="http://cssgridgarden.com/#es">Grid Garden (ES)</a></li>
+						<li><a href="https://gridbyexample.com/">Grid By Example (ES)</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">Herramientas de Firefox</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Grids en los navegadores</h2>
+					<a href="https://caniuse.com/#feat=css-grid" target="_blank"><img src="img/grids.png" alt="Grids tabla de compatibilidad"></a>
+				</section>
+
+				<section>
+					<h2>Si queremos evitar problemas...</h2>
+					<a target="_blank" href="http://motherfuckingwebsite.com/">Un sitio genial como ejemplo</a>
 				</section>
 
 				<section class="left">
 					<h2>¡Gracias!</h2>
 					<ul>
+						<li>¿Dudas?</li>
 						<li>
 							Slides en GitHub: <a href="https://github.com/evaferreira/acamica-responsive" target="_blank">wwww.github.com/evaferreira/acamica-responsive</a>
 						</li>

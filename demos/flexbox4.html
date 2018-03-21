@@ -13,6 +13,7 @@
 			width: 100%;
 			margin: auto;
 			max-width: 1000px;
+			flex-wrap: wrap;
 		}
 		.hijo{
 			background-color: hotpink;
@@ -30,15 +31,16 @@
 	<pre>
 			<style contenteditable class="edit-me">
 .padre{
-	/display: flex;
+	display: flex;
+	flex-direction: column;
 }
 			</style>
 	</pre>
 	<div class="flota col">
 		<div class="padre">
-			<div class="hijo">Soy un hijo</div>
-			<div class="hijo">Soy un hijo</div>
-			<div class="hijo">Soy un hijo</div>
+			<div class="hijo hijo-uno">Hijo 1</div>
+			<div class="hijo hijo-dos">Hijo 2</div>
+			<div class="hijo hijo-tres">Hijo 3</div>
 		</div>
 	</div>
 	</section>
